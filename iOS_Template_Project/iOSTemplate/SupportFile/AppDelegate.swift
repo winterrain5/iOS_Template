@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vc.view.backgroundColor = .white
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
-        Logger.debug(APIHost.AppBuildType.currentBuildType)
+        Logger.debug(APIHost.share.buildType.currentBuildType)
         return true
     }
 

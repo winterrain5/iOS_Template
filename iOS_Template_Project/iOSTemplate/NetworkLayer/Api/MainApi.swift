@@ -32,7 +32,7 @@ let APIProvider = MoyaProvider<MultiTarget>(requestClosure:requestClosure,
 extension TargetType {
     
     var baseURL: URL {
-        return URL(string:APIHost.BaseUrl.trimmed)!
+        return URL(string:APIHost.share.BaseUrl.trimmed)!
     }
     
     var sampleData: Data {
